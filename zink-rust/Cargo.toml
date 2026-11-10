@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = ["crates/win-native-media", "crates/zink-app", "crates/zink-core", "crates/zink-data", "crates/zink-media", "crates/zink-platform-windows"]
+exclude = ["crates/zink-connect-host"]
+
+[workspace.package]
+version = "5.0.0-alpha.1"
+edition = "2024"
+rust-version = "1.92"
+license = "Proprietary"
+
+[workspace.dependencies]
+anyhow = "1.0"
+directories = "6.0"
+lofty = "0.25.5"
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+raw-window-handle = "0.6.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+slint = { version = "1.18.1", default-features = false, features = ["backend-winit", "renderer-femtovg", "renderer-software", "compat-1-2", "raw-window-handle-06"] }
+thiserror = "2.0"
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+tracing = "0.1.44"
+tracing-appender = "0.2"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+url = "2.5"
+walkdir = "2.5"
+windows = "0.62.2"
+tao = { version = "0.37.2", default-features = false, features = ["rwh_06"] }
+wry = { version = "0.57.1", default-features = false }
+
+[workspace.lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+unused_must_use = "deny"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
+

@@ -1,0 +1,41 @@
+[package]
+name = "zink-media"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+url.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = [
+    "Foundation",
+    "Foundation_Collections",
+    "Devices_Enumeration",
+    "Graphics_DirectX_Direct3D11",
+    "Media",
+    "Media_Audio",
+    "Media_Effects",
+    "Media_Core",
+    "Media_MediaProperties",
+    "Media_Playback",
+    "Media_Render",
+    "Storage",
+    "Storage_Streams",
+    "Win32_Foundation",
+    "Win32_Graphics_Direct3D",
+    "Win32_Graphics_Direct3D11",
+    "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Dxgi_Common",
+    "Win32_Graphics_Gdi",
+    "Win32_Media_MediaFoundation",
+    "Win32_System_WinRT_Direct3D11",
+    "Win32_System_WinRT",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[lints]
+workspace = true
+

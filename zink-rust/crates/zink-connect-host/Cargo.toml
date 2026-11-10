@@ -1,0 +1,23 @@
+[package]
+name = "zink-connect-host"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[[bin]]
+name = "zink-connect"
+path = "src/main.rs"
+
+[target.'cfg(windows)'.dependencies]
+tao.workspace = true
+wry.workspace = true
+serde_json.workspace = true
+windows = { workspace = true, features = ["Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
+
+[build-dependencies]
+winresource = "0.1.34"
+
+[lints]
+workspace = true

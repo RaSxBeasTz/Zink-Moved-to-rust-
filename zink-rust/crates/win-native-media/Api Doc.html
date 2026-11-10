@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://6cf2b36f-2b77-4ff2-9b58-520c47425207.frame.claudeusercontent.com/_f/1783322283-4acb/?__frame_t=yypX93FxWIoLXAzFyaRSQ6VY.3c166ccf-f6fe-4966-ad57-1f8fc73aa928.aa829945-9a68-4200-8d16-7b49c455e8ca.1783325967&__frame_v=manifest.bda96bdb5ebc99bf.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1783322283-4acb/">--><base href="."><script>window.__FRAME_PREAMBLE={"capabilities":{"mcp":"mcp.BQqQVVN_.js"},"transforms":"_transforms.DYk1Ltlh.js"}</script><script>(function(){"use strict";const J="modulepreload",K=function(e){return"/"+e},V={},N=function(t,n,u){let o=Promise.resolve();function i(f){const a=new Event("vite:preloadError",{cancelable:!0});if(a.payload=f,window.dispatchEvent(a),!a.defaultPrevented)throw f}return o.then(f=>{for(const a of f||[])a.status==="rejected"&&i(a.reason);return t().catch(i)})},$=["light","dark","system"];function q(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_init;return t!=null&&typeof t=="object"}function I(e){if(e==null||typeof e!="object")return!1;const t=e.__frame_theme;if(t==null||typeof t!="object")return!1;const n=t.theme;return typeof n=="string"&&$.includes(n)}function S(e){if(window===top||e.type==="auxclick"&&e.button!==1)return;const t=e.composedPath?e.composedPath():[e.target];let n=null;for(let f=0;f<t.length;f++){const a=t[f];if(a&&a.matches&&a.matches("a[href],area[href]")){n=a;break}}if(!n&&e.target&&e.target.closest&&(n=e.target.closest("a[href],area[href]")),!n)return;const u=n.getAttribute("href");if(!u)return;let o,i;try{o=new URL(u,document.baseURI),i=new URL(document.baseURI).origin}catch{return}(o.protocol==="http:"||o.protocol==="https:")&&o.origin!==i&&(e.preventDefault(),parent.postMessage({__frame_nav:!0,url:o.href},"*"))}const L={};function v(e){if(window===top)return;const t=Date.now();t-(L[e]||0)<500||(L[e]=t,parent.postMessage({__frame_engaged:!0,kind:e},"*"))}function U(){addEventListener("click",S,!0),addEventListener("auxclick",S,!0)}function D(){addEventListener("scroll",()=>v("scroll"),{capture:!0,passive:!0}),addEventListener("pointermove",()=>v("pointer"),{capture:!0,passive:!0}),addEventListener("click",()=>v("click"),{capture:!0,passive:!0})}function F(e,t,n){const u=[...t.values()].filter(o=>o.targets.some(i=>i.startsWith(e+".")));return{wrap(o,i){const f=`${e}.${o}`,a=u.filter(s=>s.targets.includes(f));return a.length===0?(...s)=>{try{return i(...s)}catch(d){return Promise.reject(d)}}:(...s)=>{let d=s;for(const c of a){const l=c.module.parameters;if(l)try{d=l(d)}catch{return Promise.reject({code:"transform_error",id:c.id,scope:e,message:"parameters transform failed"})}}let m;try{m=i(...d)}catch(c){m=Promise.reject(c)}return m.then(c=>{for(let l=a.length-1;l>=0;l--){const g=a[l],p=g.module.returns;if(p)try{c=p(c)}catch{return n({id:g.id,scope:e,leg:"returns"}),c}}return c},c=>{for(let l=a.length-1;l>=0;l--){const g=a[l],p=g.module.throws;if(p)try{c=p(c)}catch{return n({id:g.id,scope:e,leg:"throws"}),Promise.reject(c)}}return Promise.reject(c)})}}}}function B(e,t,n,u=()=>{}){const o=new Set(e.changes??[]),i=new Map;for(const f of o){const a=t[f];a&&i.set(f,a)}return{contract:e.contract,changes:o,flags:new Set(e.flags??[]),capabilities:e.capabilities??{},transforms:i,shellOrigin:n.shellOrigin,mount:n.mount,pipe:f=>F(f,i,u)}}(function(){const e=Object.defineProperty,t=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let u=0;for(let o=0;o<n.length;o++){const i=n[o];try{e(t,i,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[i]}catch{}try{e(t,i,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[i]=="function"&&u++}if(u&&window!==top)try{parent.postMessage({__frame_rtc_lockdown_failed:u},"*")}catch{}})();const z=1e4,x=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function W(e){for(const t of x)if(t.endsWith(":*"))try{const n=new URL(e);if(`${n.protocol}//${n.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}const b=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities??{}}),E=window.__FRAME_PREAMBLE?.transforms,k=/^[\w.-]+\.js$/,H=/^[a-z][a-z0-9_-]{0,63}$/;let C=null,h=null;function P(e,t,n){try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}let R=!1;function A(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,R=!0):R&&(delete t.dataset.theme,t.style.colorScheme="",R=!1)}const _=new Map;function G(e,t){const n=_.get(e);if(!n)return;Object.assign(n.impl,t),n.impl.__settled=()=>Promise.reject({code:"capability_removed",message:`${e}: method not in this runtime`});const u=n.queue;n.queue=[];for(const o of u){const i=t[o.method];i?i(...o.args).then(o.resolve,o.reject):o.reject({code:"capability_removed",message:`${e}.${o.method} is not in this runtime`})}}function j(e,t){const n=_.get(e);if(!n)return;n.impl.__settled=()=>Promise.reject(t);const u=n.queue;n.queue=[];for(const o of u)o.reject(t)}const O=Object.getOwnPropertyDescriptor(window,"claude");if(window!==top&&!(O&&O.writable===!1)){U(),D();const e=O?.value??{};P(window,"claude",e);const t=s=>{const d={impl:Object.create(null),queue:[]};_.set(s,d);const m=new Proxy(d.impl,{get:(c,l)=>{if(typeof l=="string"&&!(l==="then"||l==="toJSON"||l==="valueOf"))return l==="toString"?Object.prototype.toString:(...g)=>{const p=c[l]??c.__settled;return p?p(...g):new Promise((w,M)=>{d.queue.push({method:l,args:g,resolve:w,reject:M})})}},set:()=>!1});P(e,s,m)};for(const s of Object.keys(b)){if(e[s]!==void 0){P(e,s,e[s]);continue}t(s)}let n=null,u=null,o=0;const i=s=>{s.source!==parent||!W(s.origin)||q(s.data)&&(n=s.data.__frame_init,h=s.origin,removeEventListener("message",i),clearTimeout(o),u?.())};addEventListener("message",i),parent.postMessage({__frame_connect:!0},"*");const f=new Promise(s=>{u=s,o=setTimeout(()=>{removeEventListener("message",i),s()},z)}),a=document.readyState==="loading"?new Promise(s=>document.addEventListener("DOMContentLoaded",()=>s(),{once:!0})):Promise.resolve();f.then(async()=>{if(!n||!h){for(const r of _.keys())j(r,{code:"not_granted",message:"frame initialization did not arrive - capability unavailable"});return}A(n.theme);const s=h;addEventListener("message",r=>{r.source!==parent||r.origin!==s||I(r.data)&&A(r.data.__frame_theme.theme)});const d=r=>N(()=>import("/_runtime/"+r),void 0),m=Object.keys(n.capabilities??{});for(const r of m)Object.hasOwn(b,r)||H.test(r)&&e[r]===void 0&&(t(r),j(r,{code:"capability_disabled",message:"capability not in this runtime generation"}));const c=m.filter(r=>Object.hasOwn(b,r)).map(r=>[r,b[r]]).filter(r=>typeof r[1]=="string"&&k.test(r[1])),[l,...g]=await Promise.allSettled([E&&k.test(E)?d(E):Promise.resolve({}),...c.map(([,r])=>d(r))]),p=h;C=B(n,l.status==="fulfilled"&&l.value?.TRANSFORMS||{},{shellOrigin:p,mount:G},r=>parent.postMessage({__frame_cap_telemetry:r},p));const w=r=>parent.postMessage({__frame_cap_telemetry:{kind:"cap-load-error",cap:r}},p),M=C;g.forEach((r,y)=>{const T=c[y][0];if(r.status!=="fulfilled"){w(T);return}try{r.value?.install?.(M)}catch{w(T)}});for(const[r,y]of _)y.queue.length===0&&Object.keys(y.impl).length>0||j(r,{code:m.includes(r)?"capability_disabled":"not_granted",message:"capability not available in this session"});await a,parent.postMessage({__frame_ready:!0},h)})}})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>media-pipeline — Configuration API</title>
+<style>
+  :root {
+    --ground: #faf8f5;
+    --panel: #ffffff;
+    --panel-2: #f3efe9;
+    --ink: #221d1a;
+    --ink-soft: #5c534d;
+    --ink-faint: #8a827c;
+    --rule: #e6ded4;
+    --ember: #c8551f;
+    --ember-soft: #f0e0d4;
+    --slate: #326c93;
+    --slate-soft: #dde8ef;
+    --warn: #9a6a12;
+    --warn-soft: #f3e7cd;
+    --code-bg: #f4efe8;
+    --code-ink: #33291f;
+    --mono: "JetBrains Mono", "SFMono-Regular", "Cascadia Code", "Fira Code", Consolas, "Liberation Mono", monospace;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #17130f;
+      --panel: #1f1a15;
+      --panel-2: #241e18;
+      --ink: #f0e9e0;
+      --ink-soft: #b9afa4;
+      --ink-faint: #8a7f73;
+      --rule: #33291f;
+      --ember: #e8843f;
+      --ember-soft: #3a271a;
+      --slate: #6ba8ce;
+      --slate-soft: #1e2b34;
+      --warn: #d3a24a;
+      --warn-soft: #33280f;
+      --code-bg: #14100c;
+      --code-ink: #e4d8c8;
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #faf8f5; --panel: #ffffff; --panel-2: #f3efe9;
+    --ink: #221d1a; --ink-soft: #5c534d; --ink-faint: #8a827c; --rule: #e6ded4;
+    --ember: #c8551f; --ember-soft: #f0e0d4; --slate: #326c93; --slate-soft: #dde8ef;
+    --warn: #9a6a12; --warn-soft: #f3e7cd; --code-bg: #f4efe8; --code-ink: #33291f;
+  }
+  :root[data-theme="dark"] {
+    --ground: #17130f; --panel: #1f1a15; --panel-2: #241e18;
+    --ink: #f0e9e0; --ink-soft: #b9afa4; --ink-faint: #8a7f73; --rule: #33291f;
+    --ember: #e8843f; --ember-soft: #3a271a; --slate: #6ba8ce; --slate-soft: #1e2b34;
+    --warn: #d3a24a; --warn-soft: #33280f; --code-bg: #14100c; --code-ink: #e4d8c8;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 4.5rem) clamp(1.1rem, 4vw, 2rem) 6rem;
+  }
+
+  /* ---- masthead ---- */
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 1.6rem; margin-bottom: 2.8rem; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ember);
+    margin: 0 0 0.7rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 2.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.6rem;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+  h1 .mono { font-family: var(--mono); font-weight: 600; font-size: 0.82em; color: var(--ink-soft); }
+  .lede { font-size: 1.08rem; color: var(--ink-soft); max-width: 62ch; margin: 0; }
+
+  /* ---- sections ---- */
+  section { margin-top: 3.4rem; }
+  h2 {
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.4rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+  h2 .num {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ember);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  h3 { font-size: 1.02rem; margin: 2.2rem 0 0.5rem; letter-spacing: -0.01em; }
+  .section-note { color: var(--ink-soft); margin: 0 0 1.4rem; max-width: 64ch; }
+  p { max-width: 66ch; }
+  a { color: var(--ember); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  /* ---- code ---- */
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.1rem 1.2rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--code-ink);
+  }
+  code { font-family: var(--mono); }
+  p code, li code, td code {
+    background: var(--panel-2);
+    padding: 0.1em 0.38em;
+    border-radius: 4px;
+    font-size: 0.86em;
+    color: var(--ink);
+  }
+  .tok-key { color: var(--slate); }
+  .tok-type { color: var(--ember); font-weight: 600; }
+  .tok-num { color: var(--warn); }
+  .tok-str { color: #4a8a5c; }
+  .tok-com { color: var(--ink-faint); font-style: italic; }
+  @media (prefers-color-scheme: dark) { .tok-str { color: #7cc48c; } }
+  :root[data-theme="dark"] .tok-str { color: #7cc48c; }
+  :root[data-theme="light"] .tok-str { color: #4a8a5c; }
+
+  /* ---- field table ---- */
+  .table-scroll { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; min-width: 560px; }
+  th, td { text-align: left; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    border-bottom: 1.5px solid var(--rule);
+    font-weight: 600;
+  }
+  td:first-child code { white-space: nowrap; }
+  td .ty { font-family: var(--mono); font-size: 0.8rem; color: var(--ember); }
+  .default { font-family: var(--mono); font-size: 0.82rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+  /* ---- callout ---- */
+  .note {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.8rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: 8px;
+    margin: 1.2rem 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+  .note .tag {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 0.15rem;
+  }
+  .note.warn { background: var(--warn-soft); }
+  .note.warn .tag { color: var(--warn); }
+  .note.info { background: var(--slate-soft); }
+  .note.info .tag { color: var(--slate); }
+  .note p { margin: 0; max-width: none; }
+
+  /* ---- preset grid ---- */
+  .presets { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1.4rem 0; }
+  .preset {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+  }
+  .preset h4 { margin: 0 0 0.7rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+  .preset .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .preset dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.25rem 0.9rem; font-size: 0.84rem; }
+  .preset dt { color: var(--ink-faint); font-family: var(--mono); font-size: 0.76rem; }
+  .preset dd { margin: 0; font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); }
+
+  ul.tight { padding-left: 1.2rem; }
+  ul.tight li { margin: 0.3rem 0; max-width: 64ch; }
+  .foot { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); color: var(--ink-faint); font-size: 0.82rem; }
+  .foot code { font-size: 0.9em; }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Rust · Windows · Native Capture Pipeline</p>
+    <h1>Configuring <span class="mono">Pipeline</span> with custom settings</h1>
+    <p class="lede">Resolution, frame rate, video bitrate, audio bitrate, capture source, recording, and streaming — all set through one <code>PipelineConfig</code> before you call <code>start()</code>.</p>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span> The shape of a config</h2>
+    <p class="section-note">Everything the pipeline does is decided up front by the <code>PipelineConfig</code> you hand to <code>Pipeline::new</code>. Video settings are required; recording, streaming, and audio are each opt-in.</p>
+
+<pre><code><span class="tok-key">use</span> media_pipeline::{
+    Pipeline, PipelineConfig, RecordConfig, StreamConfig,
+    AudioConfig, VideoConfig, CaptureTarget,
+};
+
+<span class="tok-key">let</span> config = <span class="tok-type">PipelineConfig</span> {
+    <span class="tok-com">// what to capture</span>
+    capture_target: <span class="tok-type">CaptureTarget</span>::Monitor(<span class="tok-num">0</span>),
+    capture_cursor: <span class="tok-num">true</span>,
+
+    <span class="tok-com">// custom video settings</span>
+    video: <span class="tok-type">VideoConfig</span> {
+        width: <span class="tok-num">2560</span>,
+        height: <span class="tok-num">1440</span>,
+        fps: <span class="tok-num">60</span>,
+        bitrate: <span class="tok-num">12_000_000</span>,        <span class="tok-com">// 12 Mbps</span>
+        keyframe_interval: <span class="tok-num">120</span>,     <span class="tok-com">// 2s GOP at 60 fps</span>
+    },
+
+    <span class="tok-com">// record to disk (None to disable)</span>
+    record: <span class="tok-type">Some</span>(<span class="tok-type">RecordConfig</span> {
+        output_path: <span class="tok-str">"capture.mp4"</span>.into(),
+    }),
+
+    <span class="tok-com">// stream to RTMP (None to disable)</span>
+    stream: <span class="tok-type">Some</span>(<span class="tok-type">StreamConfig</span> {
+        url: <span class="tok-str">"rtmp://live.example.com/app"</span>.into(),
+        stream_key: <span class="tok-str">"your-stream-key"</span>.into(),
+    }),
+
+    <span class="tok-com">// custom audio settings (None for video-only)</span>
+    audio: <span class="tok-type">Some</span>(<span class="tok-type">AudioConfig</span> {
+        loopback: <span class="tok-num">true</span>,        <span class="tok-com">// system / desktop audio</span>
+        microphone: <span class="tok-num">true</span>,      <span class="tok-com">// default mic (skipped if absent)</span>
+        bitrate: <span class="tok-num">192_000</span>,      <span class="tok-com">// 192 kbps AAC</span>
+    }),
+};
+
+<span class="tok-key">let mut</span> pipeline = <span class="tok-type">Pipeline</span>::new(config)?;
+pipeline.start().<span class="tok-key">await</span>?;
+<span class="tok-com">// ... running ...</span>
+pipeline.stop().<span class="tok-key">await</span>?;</code></pre>
+
+    <div class="note info">
+      <span class="tag">Note</span>
+      <p><code>start()</code> and <code>stop()</code> are async so they drop straight into a <code>#[tauri::command]</code>, but the capture and encode work runs on its own OS thread — it never blocks the async runtime. <code>start()</code> returns once the pipeline is live; <code>is_recording()</code> and <code>is_streaming()</code> reflect state immediately after.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Video settings</h2>
+    <p class="section-note">The <code>VideoConfig</code> fields control resolution, frame rate, and the H.264 encoder. Implements <code>Default</code>, so you can override just the fields you care about.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>Field</th><th>Type</th><th>Default</th><th>What it does</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>width</code></td><td><span class="ty">u32</span></td><td class="default">1920</td>
+          <td>Encoded frame width in pixels. Set to your capture resolution (e.g. 3840 for 4K).</td>
+        </tr>
+        <tr>
+          <td><code>height</code></td><td><span class="ty">u32</span></td><td class="default">1080</td>
+          <td>Encoded frame height in pixels (e.g. 2160 for 4K).</td>
+        </tr>
+        <tr>
+          <td><code>fps</code></td><td><span class="ty">u32</span></td><td class="default">30</td>
+          <td>Target frame rate. Drives per-frame timestamps and pacing. 30 or 60 are typical.</td>
+        </tr>
+        <tr>
+          <td><code>bitrate</code></td><td><span class="ty">u32</span></td><td class="default">6_000_000</td>
+          <td>Average target video bitrate in <strong>bits per second</strong>. Higher = better quality, larger files, more bandwidth.</td>
+        </tr>
+        <tr>
+          <td><code>keyframe_interval</code></td><td><span class="ty">u32</span></td><td class="default">60</td>
+          <td>GOP size in <strong>frames</strong> between keyframes. Keep short for streaming — a late viewer waits up to this long for a keyframe to start decoding.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h3>Override only what you need</h3>
+<pre><code><span class="tok-com">// start from defaults, change three fields</span>
+<span class="tok-key">let</span> video = <span class="tok-type">VideoConfig</span> {
+    width: <span class="tok-num">3840</span>,
+    height: <span class="tok-num">2160</span>,
+    fps: <span class="tok-num">60</span>,
+    ..<span class="tok-type">VideoConfig</span>::default()
+};</code></pre>
+
+    <div class="note warn">
+      <span class="tag">Constraint</span>
+      <p><strong>Use even dimensions.</strong> H.264 (4:2:0) and the RTMP/FLV path expect even width and height. Odd values can fail encoder negotiation. Set <code>keyframe_interval</code> to roughly <code>2 × fps</code> for streaming so viewers and network segments align on a ~2-second keyframe cadence.</p>
+    </div>
+
+    <div class="note warn">
+      <span class="tag">4K note</span>
+      <p>At 3840×2160 the v1 <strong>software</strong> encoder does a per-frame GPU→CPU copy plus a CPU H.264 encode and may not keep up at 30&nbsp;fps. The hardware zero-copy path is the intended 4K route — see the encoder notes in the crate.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Audio settings</h2>
+    <p class="section-note">Set <code>audio</code> to <code>Some(AudioConfig { .. })</code> to capture sound, or <code>None</code> for video-only. Recording writes system audio and microphone as <strong>two separate AAC tracks</strong>; streaming publishes a <strong>single mixed</strong> AAC track.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>Field</th><th>Type</th><th>Default</th><th>What it does</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>loopback</code></td><td><span class="ty">bool</span></td><td class="default">true</td>
+          <td>Capture system / desktop audio via WASAPI loopback (game and app sound).</td>
+        </tr>
+        <tr>
+          <td><code>microphone</code></td><td><span class="ty">bool</span></td><td class="default">true</td>
+          <td>Capture the default input device. Silently skipped if no microphone exists.</td>
+        </tr>
+        <tr>
+          <td><code>bitrate</code></td><td><span class="ty">u32</span></td><td class="default">128_000</td>
+          <td>AAC bitrate in <strong>bits per second</strong>. 128 kbps is transparent for most content; 192–256 kbps for music.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+<pre><code><span class="tok-com">// system audio only, higher bitrate for a music stream</span>
+<span class="tok-key">let</span> audio = <span class="tok-type">AudioConfig</span> {
+    loopback: <span class="tok-num">true</span>,
+    microphone: <span class="tok-num">false</span>,
+    bitrate: <span class="tok-num">256_000</span>,
+};</code></pre>
+
+    <div class="note info">
+      <span class="tag">Routing</span>
+      <p>Sample rate and channel count are read from the device (commonly 48&nbsp;kHz stereo) — you set the bitrate, the pipeline matches the format. In the MP4, loopback is track&nbsp;0 and mic is track&nbsp;1. For RTMP, both sources are summed into one track since FLV carries a single audio stream.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Capture source &amp; outputs</h2>
+
+    <h3>What to capture</h3>
+    <p><code>CaptureTarget</code> selects the source. The index or window handle is yours to supply.</p>
+<pre><code><span class="tok-type">CaptureTarget</span>::Monitor(<span class="tok-num">0</span>)          <span class="tok-com">// monitor by index (0 = first enumerated)</span>
+<span class="tok-type">CaptureTarget</span>::Window(hwnd)         <span class="tok-com">// a specific window, HWND as isize</span></code></pre>
+    <p><code>capture_cursor: bool</code> toggles whether the mouse cursor is drawn into the frame.</p>
+
+    <h3>Recording, streaming, or both</h3>
+    <ul class="tight">
+      <li><code>record: Some(RecordConfig { output_path })</code> — write an MP4. <code>output_path</code> is any <code>Into&lt;PathBuf&gt;</code> (a <code>&amp;str</code> works).</li>
+      <li><code>stream: Some(StreamConfig { url, stream_key })</code> — publish over RTMP. <code>url</code> is the ingest URL up to the app (e.g. <code>rtmp://host:1935/live</code>); <code>stream_key</code> is the stream name that follows.</li>
+      <li>Set either to <code>None</code> to disable that branch. At least one must be enabled, or <code>Pipeline::new</code> returns an error.</li>
+    </ul>
+
+    <div class="note info">
+      <span class="tag">One encode</span>
+      <p>When both are on, the frame is encoded <strong>once</strong> and forked to both outputs — recording never drops a frame, while the stream may drop non-keyframes under network backpressure (never a keyframe).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Ready-made presets</h2>
+    <p class="section-note">Common configurations to copy. Bitrates are starting points — tune to your bandwidth and quality target.</p>
+
+    <div class="presets">
+      <div class="preset">
+        <h4><span class="dot" style="background:var(--slate)"></span> 1080p60 streaming</h4>
+        <dl>
+          <dt>res</dt><dd>1920×1080</dd>
+          <dt>fps</dt><dd>60</dd>
+          <dt>video</dt><dd>6 Mbps</dd>
+          <dt>gop</dt><dd>120</dd>
+          <dt>audio</dt><dd>160 kbps</dd>
+        </dl>
+      </div>
+      <div class="preset">
+        <h4><span class="dot" style="background:var(--ember)"></span> 1440p high-quality record</h4>
+        <dl>
+          <dt>res</dt><dd>2560×1440</dd>
+          <dt>fps</dt><dd>60</dd>
+          <dt>video</dt><dd>18 Mbps</dd>
+          <dt>gop</dt><dd>120</dd>
+          <dt>audio</dt><dd>256 kbps</dd>
+        </dl>
+      </div>
+      <div class="preset">
+        <h4><span class="dot" style="background:var(--warn)"></span> 720p low-bandwidth</h4>
+        <dl>
+          <dt>res</dt><dd>1280×720</dd>
+          <dt>fps</dt><dd>30</dd>
+          <dt>video</dt><dd>2.5 Mbps</dd>
+          <dt>gop</dt><dd>60</dd>
+          <dt>audio</dt><dd>96 kbps</dd>
+        </dl>
+      </div>
+      <div class="preset">
+        <h4><span class="dot" style="background:var(--ink-faint)"></span> 4K archive (hardware)</h4>
+        <dl>
+          <dt>res</dt><dd>3840×2160</dd>
+          <dt>fps</dt><dd>30</dd>
+          <dt>video</dt><dd>40 Mbps</dd>
+          <dt>gop</dt><dd>60</dd>
+          <dt>audio</dt><dd>256 kbps</dd>
+        </dl>
+      </div>
+    </div>
+
+<pre><code><span class="tok-com">// 1080p60 streaming preset, expanded</span>
+<span class="tok-type">PipelineConfig</span> {
+    capture_target: <span class="tok-type">CaptureTarget</span>::Monitor(<span class="tok-num">0</span>),
+    capture_cursor: <span class="tok-num">true</span>,
+    video: <span class="tok-type">VideoConfig</span> {
+        width: <span class="tok-num">1920</span>, height: <span class="tok-num">1080</span>, fps: <span class="tok-num">60</span>,
+        bitrate: <span class="tok-num">6_000_000</span>, keyframe_interval: <span class="tok-num">120</span>,
+    },
+    record: <span class="tok-num">None</span>,
+    stream: <span class="tok-type">Some</span>(<span class="tok-type">StreamConfig</span> {
+        url: <span class="tok-str">"rtmp://localhost:1935/live"</span>.into(),
+        stream_key: <span class="tok-str">"test"</span>.into(),
+    }),
+    audio: <span class="tok-type">Some</span>(<span class="tok-type">AudioConfig</span> {
+        loopback: <span class="tok-num">true</span>, microphone: <span class="tok-num">true</span>, bitrate: <span class="tok-num">160_000</span>,
+    }),
+}</code></pre>
+  </section>
+
+  <p class="foot">
+    Fields, types, and defaults reflect the current public API in <code>media-pipeline</code> (<code>PipelineConfig</code>, <code>VideoConfig</code>, <code>AudioConfig</code>, <code>RecordConfig</code>, <code>StreamConfig</code>, <code>CaptureTarget</code>). Bitrates are in bits per second; keyframe interval is in frames.
+  </p>
+
+</div>
+
+</body></html>
